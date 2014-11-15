@@ -1,0 +1,30 @@
+{
+    "name": "ibourgeois/laraedit",
+    "description": "IDE Package for Laravel",
+    "keywords": ["code editor", "admin", "database", "terminal", "laravel", "ide"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Derek Bourgeois",
+            "email": "derek@ibourgeois.com"
+        }
+    ],
+     "support": {
+        "issues": "https://github.com/iBourgeois/LaraEdit/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/models",
+            "src/controllers"
+        ],
+        "psr-0": {
+            "iBourgeois\\ArtisanEdit\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
