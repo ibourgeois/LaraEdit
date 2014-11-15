@@ -30,4 +30,9 @@ If you want to test out the current functionality, just copy the source folder t
 
 <code>Warning: Things may or may not work as expected as some configurations were made for my development box.</code>
 
+Open Source Projects Used
+=========================
 
+<ul>
+  <li><a href="http://jquery.com/">jQuery 1.11.1</a></li>
+</ul>
