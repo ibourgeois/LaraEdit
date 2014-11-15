@@ -101,10 +101,10 @@
         </div>
         
         <script src="{{asset('packages/ibourgeois/laraedit/js/jquery/jquery.min.js')}}"></script>
+        <script src="{{asset('packages/ibourgeois/laraedit/js/bootstrap/bootstrap.min.js')}}"></script>
         
         <!-- // Replace with local versions
         
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
         
         <!-- // Upload JS files and update path(s)
