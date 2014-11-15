@@ -1,4 +1,4 @@
-LaraEdit
+LaraEdit <img src="https://travis-ci.org/iBourgeois/LaraEdit.svg?branch=master" />
 ===========
 
 IDE Package for Laravel
