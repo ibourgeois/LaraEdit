@@ -1,6 +1,6 @@
 <?php
 
-Route::group(array('prefix' => Config::get('laraedit::laraedit.uri'), 'before' => 'validate_dev'), function()
+Route::group(array('prefix' => Config::get('laraedit::laraedit.uri'), 'before' => 'laraedit_dev'), function()
 {
 	Route::get('/', array(
 		'as' => 'laraedit_home',
