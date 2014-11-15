@@ -1,5 +1,5 @@
 {
-    "name": "iBourgeois/LaraEdit",
+    "name": "ibourgeois/laraedit",
     "description": "IDE Package for Laravel",
     "keywords": ["code editor", "admin", "database", "terminal", "laravel", "ide"],
     "license": "MIT",
