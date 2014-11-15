@@ -23,3 +23,11 @@ Info
 ====
 
 I am still converting my source code to a Laravel Package and uploading files as I go. To see what I am building, check out my YouTube videos (playlist): http://youtu.be/q1kUxYe6JcQ?list=PL-eVEjqk2Kwie7PqhhkO3iFe7GORgxPvB
+
+I have added the original source code inside the <code>source</code> folder. As the files in this folder are refactored and moved into the actual package, I will remove them from the source. 
+
+If you want to test out the current functionality, just copy the source folder to your development server and open index.php in your browser. 
+
+<code>Warning: Things may or may not work as expected as some configurations were made for my development box.</code>
+
+
