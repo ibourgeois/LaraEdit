@@ -99,10 +99,11 @@
                 </ul>
             </div>
         </div>
-
+        
+        <script src="{{asset('packages/ibourgeois/laraedit/js/jquery/jquery.min.js')}}"></script>
+        
         <!-- // Replace with local versions
         
-        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
         
