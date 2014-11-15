@@ -14,7 +14,7 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400' rel='stylesheet' type='text/css'>
         
-        <!-- // Upload stylesheets and update path(s)
+        <!// Upload stylesheets and update path(s)
         
         <link rel="stylesheet" href="assets/js/js-tree/themes/default-dark/style.min.css" />
         <link rel="stylesheet" href="assets/css/terminal/screen.css">
@@ -102,14 +102,13 @@
         
         <script src="{{asset('packages/ibourgeois/laraedit/js/jquery/jquery.min.js')}}"></script>
         <script src="{{asset('packages/ibourgeois/laraedit/js/bootstrap/bootstrap.min.js')}}"></script>
+        <!-- <script src="{{asset('packages/ibourgeois/laraedit/js/jquery-ui/jquery-ui.js')}}"></script> -->
+        <script src="{{asset('packages/ibourgeois/laraedit/js/ace/ace.js')}}"></script>
         
-        <!-- // Replace with local versions
+        <!--
         
-        <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-        
-        <!-- // Upload JS files and update path(s)
+        <// Upload JS files and update path(s)
 
-        <script src="assets/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>\
         <script src="assets/js/js-tree/jstree.min.js"></script>
         <script src="assets/js/terminal/system.js"></script>
         <script src="foot.js"></script>
