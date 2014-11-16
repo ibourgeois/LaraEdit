@@ -1,5 +1,5 @@
 <?php
 
-class LaraEditSettings {
+class LaraeditSettings {
 
 }
