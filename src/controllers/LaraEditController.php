@@ -1,8 +1,6 @@
-<?php namespace iBourgeois\LaraEdit;
+<?php namespace Ibourgeois\Laraedit;
 
-use AdministratorBaseController as Controller;
-
-class LaraEditController extends Controller
+class LaraeditController extends Controller
 {
 
 }
