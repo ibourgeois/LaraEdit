@@ -4,6 +4,6 @@ Route::group(array('prefix' => Config::get('laraedit::laraedit.uri'), 'before' =
 {
 	Route::get('/', array(
 		'as' => 'laraedit_home',
-		'uses' => 'iBourgeois\LaraEdit\LaraEditController@getIndex'
+		'uses' => 'Ibourgeois\Laraedit\LaraeditController@getIndex'
 	));
 };
