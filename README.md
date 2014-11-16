@@ -3,6 +3,7 @@ LaraEdit <img src="https://travis-ci.org/iBourgeois/LaraEdit.svg?branch=master" 
 
 IDE Package for Laravel
 
+
 Screenshots
 ===========
 Code Editor View:
@@ -10,6 +11,7 @@ Code Editor View:
 
 Terminal Emulator View:
 <img src="https://github.com/iBourgeois/LaraEdit/blob/master/source/LaraEdit2.png" />
+
 
 Install
 =======
@@ -37,7 +39,8 @@ If you want to test out the current functionality, just copy the source folder t
 
 <code>Warning: Things may or may not work as expected as some configurations were made for my development box.</code>
 
-Open Source Projects Used
+
+Credits
 =========================
 
 <ul>
