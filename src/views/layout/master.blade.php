@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <title>LaraEdit</title>
+        <title>{{ Config::get('laraedit::laraedit.title') }}</title>
 
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/bootstrap/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/font-awesome/font-awesome.min.css')}}">
