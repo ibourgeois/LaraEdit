@@ -7,7 +7,7 @@ Screenshots
 ===========
 
 <img src="https://github.com/iBourgeois/LaraEdit/blob/master/source/LaraEdit.png" />
-
+<img src="https://github.com/iBourgeois/LaraEdit/blob/master/source/LaraEdit2.png" />
 
 Install
 =======
