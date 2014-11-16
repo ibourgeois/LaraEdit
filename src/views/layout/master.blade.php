@@ -10,17 +10,16 @@
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/bootstrap/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/font-awesome/font-awesome.min.css')}}">
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/js/jquery-ui/jquery-ui.min.css')}}">
+        <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/js/js-tree/themes/default-dark/style.min.css')}}">
         
         <!-- 
             <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400' rel='stylesheet' type='text/css'>
-            
-            <link rel="stylesheet" href="assets/js/js-tree/themes/default-dark/style.min.css" />
-            <link rel="stylesheet" href="assets/css/terminal/screen.css">
         -->
 
+        <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/terminal/screen.css')}}">
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/laraedit/laraedit.css')}}">
 
-        <!--[if lt IE 9]> // Replace with local versions
+        <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
@@ -101,12 +100,8 @@
         <script src="{{asset('packages/ibourgeois/laraedit/js/bootstrap/bootstrap.min.js')}}"></script>
         <script src="{{asset('packages/ibourgeois/laraedit/js/jquery-ui/jquery-ui.min.js')}}"></script> 
         <script src="{{asset('packages/ibourgeois/laraedit/js/ace/ace.js')}}"></script>
-        
-        <!--
-            <script src="assets/js/js-tree/jstree.min.js"></script>
-            <script src="assets/js/terminal/system.js"></script>
-        -->
-
+        <script src="{{asset('packages/ibourgeois/laraedit/js/js-tree/jstree.min.js')}}"></script>
+        <script src="{{asset('packages/ibourgeois/laraedit/js/terminal/system.js')}}"></script>
         <script src="{{asset('packages/ibourgeois/laraedit/js/laraedit/laraedit.js')}}"></script>
     </body>
 </html>
