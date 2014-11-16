@@ -5,8 +5,10 @@ IDE Package for Laravel
 
 Screenshots
 ===========
-
+Code Editor View:
 <img src="https://github.com/iBourgeois/LaraEdit/blob/master/source/LaraEdit.png" />
+
+Terminal Emulator View:
 <img src="https://github.com/iBourgeois/LaraEdit/blob/master/source/LaraEdit2.png" />
 
 Install
