@@ -8,10 +8,10 @@
         <title>LaraEdit</title>
 
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/bootstrap/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/font-awesome/font-awesome.min.css')}}">
         
         <!-- // Replace with local versions... 
         
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400' rel='stylesheet' type='text/css'>
         
         <!// Upload stylesheets and update path(s)
