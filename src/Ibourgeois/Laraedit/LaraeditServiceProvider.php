@@ -1,8 +1,8 @@
-<?php namespace iBourgeois\LaraEdit;
+<?php namespace Ibourgeois\Laraedit;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaraEditServiceProvider extends ServiceProvider {
+class LaraeditServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -18,7 +18,7 @@ class LaraEditServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('iBourgeois/LaraEdit');
+		$this->package('ibourgeois/laraedit');
 
 		include __DIR__.'/../../filters.php';
 		include __DIR__.'/../../routes.php';
