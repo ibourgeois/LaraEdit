@@ -3,6 +3,6 @@
 class LaraeditController extends \Controller
 {
     public function getIndex() {
-        return 'LaraEdit is working...';
+        return 'LaraEdit is working... for now.';
     }
 }
