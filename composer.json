@@ -23,7 +23,7 @@
             "src/controllers"
         ],
         "psr-0": {
-            "iBourgeois\\ArtisanEdit\\": "src/"
+            "Ibourgeois\\Laraedit\\": "src/"
         }
     },
     "minimum-stability": "dev"
