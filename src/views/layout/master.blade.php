@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/bootstrap/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/font-awesome/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/js/jquery-ui/jquery-ui.min.css')}}">
         
         <!-- // Replace with local versions... 
         
@@ -102,7 +103,7 @@
         
         <script src="{{asset('packages/ibourgeois/laraedit/js/jquery/jquery.min.js')}}"></script>
         <script src="{{asset('packages/ibourgeois/laraedit/js/bootstrap/bootstrap.min.js')}}"></script>
-        <!-- <script src="{{asset('packages/ibourgeois/laraedit/js/jquery-ui/jquery-ui.js')}}"></script> -->
+        <script src="{{asset('packages/ibourgeois/laraedit/js/jquery-ui/jquery-ui.min.js')}}"></script> 
         <script src="{{asset('packages/ibourgeois/laraedit/js/ace/ace.js')}}"></script>
         
         <!--
