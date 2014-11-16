@@ -26,7 +26,7 @@ Install
 
 3 - Run the following command to publish the package assets:
 
-<pre>php artisan view:publish ibourgeois/laraedit</pre>
+<pre>php artisan asset:publish ibourgeois/laraedit</pre>
 
 
 LaraEdit is not yet to an installable state. Attempt installation at your own risk.
