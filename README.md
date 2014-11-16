@@ -15,15 +15,19 @@ Terminal Emulator View:
 
 Install
 =======
-<!--
-1 - Run the following command inside your Laravel application:
 
-<pre>composer install iBourgeois/LaraEdit</pre>
+1 - Add the following requirement to your <code>composer.json</code> file:
+
+<pre>"ibourgeois/laraedit": "dev-master"</pre>
 
 2 - Add the following service provider to your <code>/app/config/app.php</code> file:
 
-<pre>'iBourgeois\LaraEdit\LaraEditServiceProvider',</pre>
--->
+<pre>'Ibourgeois\Laraedit\LaraeditServiceProvider',</pre>
+
+3 - Run the following command to publish the package assets:
+
+<pre>php artisan view:publish ibourgeois/laraedit</pre>
+
 
 LaraEdit is not yet to an installable state. Attempt installation at your own risk.
 
