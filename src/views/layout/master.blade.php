@@ -11,15 +11,11 @@
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/font-awesome/font-awesome.min.css')}}">
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/js/jquery-ui/jquery-ui.min.css')}}">
         
-        <!-- // Replace with local versions... 
-        
-        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400' rel='stylesheet' type='text/css'>
-        
-        <!// Upload stylesheets and update path(s)
-        
-        <link rel="stylesheet" href="assets/js/js-tree/themes/default-dark/style.min.css" />
-        <link rel="stylesheet" href="assets/css/terminal/screen.css">
-        
+        <!-- 
+            <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400' rel='stylesheet' type='text/css'>
+            
+            <link rel="stylesheet" href="assets/js/js-tree/themes/default-dark/style.min.css" />
+            <link rel="stylesheet" href="assets/css/terminal/screen.css">
         -->
 
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/laraedit/laraedit.css')}}">
@@ -107,14 +103,10 @@
         <script src="{{asset('packages/ibourgeois/laraedit/js/ace/ace.js')}}"></script>
         
         <!--
-        
-        <// Upload JS files and update path(s)
-
-        <script src="assets/js/js-tree/jstree.min.js"></script>
-        <script src="assets/js/terminal/system.js"></script>
-        <script src="foot.js"></script>
-
+            <script src="assets/js/js-tree/jstree.min.js"></script>
+            <script src="assets/js/terminal/system.js"></script>
         -->
 
+        <script src="{{asset('packages/ibourgeois/laraedit/js/laraedit/laraedit.js')}}"></script>
     </body>
 </html>
