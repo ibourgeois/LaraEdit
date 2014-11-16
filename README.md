@@ -3,6 +3,11 @@ LaraEdit <img src="https://travis-ci.org/iBourgeois/LaraEdit.svg?branch=master" 
 
 IDE Package for Laravel
 
+Screenshots
+===========
+
+<img src="https://github.com/iBourgeois/LaraEdit/blob/master/source/LaraEdit.png" />
+
 
 Install
 =======
