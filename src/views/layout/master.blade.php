@@ -12,9 +12,7 @@
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/js/jquery-ui/jquery-ui.min.css')}}">
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/js/js-tree/themes/default-dark/style.min.css')}}">
         
-        <!-- 
-            <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400' rel='stylesheet' type='text/css'>
-        -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400">
 
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/terminal/screen.css')}}">
         <link rel="stylesheet" href="{{asset('packages/ibourgeois/laraedit/css/laraedit/laraedit.css')}}">
