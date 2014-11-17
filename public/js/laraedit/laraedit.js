@@ -11,7 +11,7 @@ $( document ).ready(function() {
         bindKey: { win: "Ctrl-s", mac: "Command-s"},
         exec: function(editor) {
         var jsVar = editor.getValue();
-        $.post("ace_write.php", { file: jsFile, contents: jsVar} );
+        $.post("laraedit/save", { file: jsFile, contents: jsVar} );
             alert("File saved!");
         },
         readOnly: false
