@@ -46,6 +46,12 @@ If you want to test out the current functionality, just copy the source folder t
 
 <code>Warning: Things may or may not work as expected as some configurations were made for my development box.</code>
 
+Links
+=====
+* <a href="https://packagist.org/packages/ibourgeois/laraedit">Packagist</a>
+* <a href="http://packalyst.com/packages/package/ibourgeois/laraedit">Packalyst</a>
+* <a href="https://travis-ci.org/iBourgeois/LaraEdit">Travis CI</a>
+* 
 
 Credits
 =========================
