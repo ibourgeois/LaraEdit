@@ -1,13 +1,13 @@
 <?php namespace Ibourgeois\Laraedit;
 
-ini_set ( 'open_basedir', dirname ( __FILE__ ) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR );
-
 class JsTreeController extends \Controller {
 
 	protected $base = null;
 
 	protected function real ( $path ) {
         
+        chdir ( app_path() );
+
         $temp = realpath ( $path );
 
         if ( ! $temp ) { 
