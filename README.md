@@ -16,7 +16,7 @@ Terminal Emulator View:
 Install
 =======
 
-1 - Add the following requirement to your <code>composer.json</code> file:
+#### 1 - Add the following requirement to your <code>composer.json</code> file:
 
 For the latest development version:
 <pre>"ibourgeois/laraedit": "dev-master"</pre>
@@ -25,15 +25,15 @@ For the latest stable version:
 <pre>"ibourgeois/laraedit": "0.0.1"</pre>
 
 
-2 - Add the following service provider to your <code>/app/config/app.php</code> file:
+#### 2 - Add the following service provider to your <code>/app/config/app.php</code> file:
 
 <pre>'Ibourgeois\Laraedit\LaraeditServiceProvider',</pre>
 
-3 - Run the following command to publish the package assets:
+#### 3 - Run the following command to publish the package assets:
 
 <pre>php artisan asset:publish ibourgeois/laraedit</pre>
 
-4 - Open LaraEdit in your browser:
+#### 4 - Open LaraEdit in your browser:
 <pre>The default route is <code>/laraedit</code></pre>
 
 
