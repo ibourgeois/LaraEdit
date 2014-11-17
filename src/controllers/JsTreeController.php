@@ -104,7 +104,7 @@ class JsTreeController extends \Controller {
 					'text' 		=> $item, 
 					'children' 	=> true,  
 					'id' 		=> $this->id ( $dir . DIRECTORY_SEPARATOR . $item ), 
-					'icon' 		=> 'folder'
+					'icon' 		=> 'fa fa-folder'
 				);
             
             }
@@ -116,7 +116,7 @@ class JsTreeController extends \Controller {
                 	'children' 	=> false, 
                 	'id' 		=> $this->id ( $dir . DIRECTORY_SEPARATOR . $item ), 
                 	'type' 		=> 'file', 
-                	'icon' 		=> 'file file-' . substr ( $item, strrpos ( $item,'.' ) + 1 )
+                	'icon' 		=> 'fa fa-file fa-file-' . substr ( $item, strrpos ( $item,'.' ) + 1 )
                 );
             
             }
@@ -130,7 +130,7 @@ class JsTreeController extends \Controller {
             		'text' 		=> basename ( $this->base ), 
             		'children' 	=> $res, 
             		'id' 		=> '/', 
-            		'icon'		=> 'folder', 
+            		'icon'		=> 'fa fa-folder', 
             		'state' 	=> array(
             			'opened' 	=> true, 
             			'disabled' 	=> true
