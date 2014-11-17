@@ -18,7 +18,12 @@ Install
 
 1 - Add the following requirement to your <code>composer.json</code> file:
 
+For the latest development version:
 <pre>"ibourgeois/laraedit": "dev-master"</pre>
+
+For the latest stable version:
+<pre>"ibourgeois/laraedit": "0.0.1"</pre>
+
 
 2 - Add the following service provider to your <code>/app/config/app.php</code> file:
 
