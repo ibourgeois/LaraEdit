@@ -51,7 +51,7 @@ Links
 * <a href="https://packagist.org/packages/ibourgeois/laraedit">Packagist</a>
 * <a href="http://packalyst.com/packages/package/ibourgeois/laraedit">Packalyst</a>
 * <a href="https://travis-ci.org/iBourgeois/LaraEdit">Travis CI</a>
-* 
+
 
 Credits
 =========================
