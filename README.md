@@ -28,6 +28,9 @@ Install
 
 <pre>php artisan asset:publish ibourgeois/laraedit</pre>
 
+4 - Open LaraEdit in your browser:
+<pre>The default route is <code>/laraedit</code></pre>
+
 
 LaraEdit is not yet to an installable state. Attempt installation at your own risk.
 
