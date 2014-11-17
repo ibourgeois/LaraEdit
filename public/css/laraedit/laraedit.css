@@ -290,3 +290,7 @@ input[type="color"]:focus,
 .jstree-wholerow-clicked {
 	background: transparent !important;
 }
+
+#tab6 .col-sm-6 {
+	color: #FFFFFF;
+}

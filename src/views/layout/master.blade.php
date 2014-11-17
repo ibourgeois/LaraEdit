@@ -66,7 +66,9 @@
                     </div>             
                 </div>
                 <div class="tab-pane fade full" id="tab3">
-                    <div class="row full"><h1>TEST TAB 3</h1></div>
+                    <div class="row full">
+                        <h1>TEST TAB 3</h1>
+                    </div>
                 </div>
                 <div class="tab-pane fade full" id="tab4">
                     <div class="row full">
@@ -82,6 +84,36 @@
                 <div class="tab-pane fade full" id="tab5">
                     <div class="row full"></div>
                 </div>
+                <div class="tab-pane fade full" id="tab6">
+                    <div class="row full">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <h2>About LaraEdit</h2>
+                            <p>LaraEdit is an open source Laravel package that allows users to develop their projects directly within Laravel. It contains a code editor with syntax highlighting and a terminal that allows users to run shell commands on the fly.</p>
+                            
+                            <p>LaraEdit is currently developed and maintained by me, Derek Bourgeois. And while I love the magic that Laravel brings to my projects, there is still a ton of work involved in building and maintaining this package.</p>
+                            
+                            <p>I currently have no plans to make any of the features paid and/or closed source, but I will gladly accept donations to help pay for expenses to keep it going.</p>
+
+                            <p>If LaraEdit has helped you or your organization and you would like to donate to the cause, you can click the PayPal Donation button below.</p>
+
+                            <p>While it is not required to use, edit, or modify LaraEdit, every donation will be greatly appreciated! Be sure to add your feature suggestions to your donation comments so I can help make LaraEdit the last IDE you'll ever need!</p>
+
+                            <p>Sincerley,<br />
+                            Derek Bourgeois</p>
+
+                            <hr />
+
+                            <center>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="HXBVN3LTBMBWW">
+                                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                            </center>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-fixed sidebar-buttons full">
                 <ul class="nav nav-tabs nav-stacked">
@@ -90,6 +122,7 @@
                     <li><a href="#tab3" data-toggle="tab"><i class="fa fa-database"></i></a></li>
                     <li><a href="#tab4" data-toggle="tab"><i class="fa fa-terminal"></i></a></li>
                     <li><a href="#tab5" data-toggle="tab"><i class="fa fa-cogs"></i></a></li>
+                    <li><a href="#tab6" data-toggle="tab"><i class="fa fa-beer"></i></a></li>
                 </ul>
             </div>
         </div>
