@@ -24,7 +24,7 @@ For the latest development version:
 <pre>"ibourgeois/laraedit": "dev-master"</pre>
 
 For the latest stable version:
-<pre>"ibourgeois/laraedit": "0.0.2"</pre>
+<pre>"ibourgeois/laraedit": "0.2.0"</pre>
 
 
 #### 2 - Add the following service provider to your <code>/app/config/app.php</code> file:
