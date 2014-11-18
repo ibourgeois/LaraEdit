@@ -1,7 +1,9 @@
 LaraEdit <img src="https://travis-ci.org/iBourgeois/LaraEdit.svg?branch=master" />
 ===========
 
-IDE Package for Laravel
+LaraEdit is an IDE Package for Laravel complete with a code editor and terminal, pre-configured for the Laravel Homestead environment. Updating the default configuration will allow LaraEdit to work in other development environments. 
+
+<pre>Warning: DO NOT INSTALL LARAEDIT IN A PRODUCTION ENVIRONMENT. THIS IS FOR DEVELOPMENT ONLY! YOU'VE BEEN WARNED!</pre>
 
 
 Screenshots
@@ -22,7 +24,7 @@ For the latest development version:
 <pre>"ibourgeois/laraedit": "dev-master"</pre>
 
 For the latest stable version:
-<pre>"ibourgeois/laraedit": "0.0.1"</pre>
+<pre>"ibourgeois/laraedit": "0.0.2"</pre>
 
 
 #### 2 - Add the following service provider to your <code>/app/config/app.php</code> file:
@@ -37,17 +39,10 @@ For the latest stable version:
 <pre>The default route is <code>/laraedit</code></pre>
 
 
-LaraEdit is not yet to an installable state. Attempt installation at your own risk.
-
-
 Info
 ====
 
 I am still converting my source code to a Laravel Package and uploading files as I go. To see what I am building, check out my YouTube videos (playlist): http://youtu.be/q1kUxYe6JcQ?list=PL-eVEjqk2Kwie7PqhhkO3iFe7GORgxPvB
-
-I have added the original source code inside the <code>source</code> folder. As the files in this folder are refactored and moved into the actual package, I will remove them from the source. 
-
-If you want to test out the current functionality, just copy the source folder to your development server and open index.php in your browser. 
 
 <code>Warning: Things may or may not work as expected as some configurations were made for my development box.</code>
 
