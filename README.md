@@ -1,4 +1,4 @@
-LaraEdit <a href="https://travis-ci.org/iBourgeois/LaraEdit"><img src="https://travis-ci.org/iBourgeois/LaraEdit.svg?branch=master" /></a>
+LaraEdit <a href="https://travis-ci.org/iBourgeois/LaraEdit"><img src="https://travis-ci.org/iBourgeois/LaraEdit.svg?branch=master" /></a> [![License](https://poser.pugx.org/ibourgeois/laraedit/license.svg)](https://packagist.org/packages/ibourgeois/laraedit) [![Total Downloads](https://poser.pugx.org/ibourgeois/laraedit/downloads.svg)](https://packagist.org/packages/ibourgeois/laraedit) [![Latest Stable Version](https://poser.pugx.org/ibourgeois/laraedit/v/stable.svg)](https://packagist.org/packages/ibourgeois/laraedit)
 ===========
 
 LaraEdit is an IDE Package for Laravel complete with a code editor and terminal, pre-configured for the Laravel Homestead environment. Updating the default configuration will allow LaraEdit to work in other development environments. 
