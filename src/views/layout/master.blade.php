@@ -123,6 +123,7 @@
                     <li><a href="#tab4" data-toggle="tab"><i class="fa fa-terminal"></i></a></li>
                     <li><a href="#tab5" data-toggle="tab"><i class="fa fa-cogs"></i></a></li>
                     <li><a href="#tab6" data-toggle="tab"><i class="fa fa-beer"></i></a></li>
+                    <li><a href="https://github.com/iBourgeois/LaraEdit/issues" target="_blank"><i class="fa fa-support"></i></a></li>
                 </ul>
             </div>
         </div>
