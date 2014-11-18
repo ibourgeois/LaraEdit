@@ -49,6 +49,7 @@ Links
 * <a href="https://packagist.org/packages/ibourgeois/laraedit">Packagist</a>
 * <a href="http://packalyst.com/packages/package/ibourgeois/laraedit">Packalyst</a>
 * <a href="https://travis-ci.org/iBourgeois/LaraEdit">Travis CI</a>
+* <a href="http://laravel.io/forum/11-18-2014-package-laraedit-ide-package-for-laravel-4-complete-with-a-code-editor-and-terminal">Laravel IO</a>
 
 
 Credits
