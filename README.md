@@ -9,10 +9,10 @@ LaraEdit is an IDE Package for Laravel complete with a code editor and terminal,
 Screenshots
 ===========
 Code Editor View:
-<img src="https://github.com/iBourgeois/LaraEdit/blob/master/source/LaraEdit.png" />
+<img src="https://github.com/iBourgeois/LaraEdit/blob/master/public/img/LaraEdit.png" />
 
 Terminal Emulator View:
-<img src="https://github.com/iBourgeois/LaraEdit/blob/master/source/LaraEdit2.png" />
+<img src="https://github.com/iBourgeois/LaraEdit/blob/master/public/img/LaraEdit2.png" />
 
 
 Install
