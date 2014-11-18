@@ -1,198 +1,126 @@
-<?php
-
-    /*
-    *  PHP+JQuery Temrinal Emulator by Fluidbyte <http://www.fluidbyte.net>
-    *
-    *  This software is released as-is with no warranty and is complete free
-    *  for use, modification and redistribution
-    */
-
-    ini_set("session.cookie_lifetime","360");
-    session_start();
-
-    //////////////////////////////////////////////////////////////////
-    // Globals
-    //////////////////////////////////////////////////////////////////
+<?php namespace Ibourgeois\Laraedit;
     
-    define('ROOT','/');
-    define('PASSWORD','secret');
-    define('BLOCKED','ssh,telnet');
-    
-    //////////////////////////////////////////////////////////////////
-    // Terminal Class
-    //////////////////////////////////////////////////////////////////
-    
-    class Terminal{
-        
-        ////////////////////////////////////////////////////
-        // Properties
-        ////////////////////////////////////////////////////
-        
+    class TerminalController extends \Controller {
+
         public $command          = '';
         public $output           = '';
         public $directory        = '';
-        
-        // Holder for commands fired by system
         public $command_exec     = '';
         
-        ////////////////////////////////////////////////////
-        // Constructor
-        ////////////////////////////////////////////////////
-        
-        public function __construct(){
-            if(!isset($_SESSION['dir'])){
-                if(ROOT==''){
+        public function __construct() {
+
+            $terminal_root    = \Config::get('laraedit::laraedit.terminal.root');
+
+            if(! \Session::has('dir')) {
+
+                if($terminal_root=='') {
+
                     $this->command_exec = 'pwd';
                     $this->Execute();
-                    $_SESSION['dir'] = $this->output;
-                }else{
-                    $this->directory = ROOT;
+                    \Session::put('dir', $this->output);
+
+                } else {
+
+                    $this->directory = $terminal_root;
                     $this->ChangeDirectory();
+
                 }
-            }else{
-                $this->directory = $_SESSION['dir'];
+
+            } else {
+
+                $this->directory = \Session::get('dir');
                 $this->ChangeDirectory();
+
             }
+
         }
         
-        ////////////////////////////////////////////////////
-        // Primary call
-        ////////////////////////////////////////////////////
-        
-        public function Process(){
+        public function Process() {
+
             $this->ParseCommand();
             $this->Execute();
             return $this->output;
+
         }
         
-        ////////////////////////////////////////////////////
-        // Parse command for special functions, blocks
-        ////////////////////////////////////////////////////
-        
-        public function ParseCommand(){
+        public function ParseCommand() {
+
+            $terminal_blocked = \Config::get('laraedit::laraedit.terminal.blocked');
             
-            // Explode command
             $command_parts = explode(" ",$this->command);
-            
-            // Handle 'cd' command
-            if(in_array('cd',$command_parts)){
+
+            if(in_array('cd',$command_parts)) {
+
                 $cd_key = array_search('cd', $command_parts);
                 $cd_key++;
                 $this->directory = $command_parts[$cd_key];
                 $this->ChangeDirectory();
-                // Remove from command
                 $this->command = str_replace('cd '.$this->directory,'',$this->command);
+
             }
             
-            // Replace text editors with cat
             $editors = array('vi','vim','nano');
+
             $this->command = str_replace($editors,'cat',$this->command);
             
-            // Handle blocked commands
-            $blocked = explode(',',BLOCKED);
-            if(in_array($command_parts[0],$blocked)){
+            $blocked = explode(',',$terminal_blocked);
+
+            if(in_array($command_parts[0],$blocked)) {
+
                 $this->command = 'echo ERROR: Command not allowed';
+
             }
             
-            // Update exec command
             $this->command_exec = $this->command . ' 2>&1';
+
         }
         
-        ////////////////////////////////////////////////////
-        // Chnage Directory
-        ////////////////////////////////////////////////////
-        
-        public function ChangeDirectory(){
+        public function ChangeDirectory() {
+
             chdir($this->directory);
-            // Store new directory
-            $_SESSION['dir'] = exec('pwd');
+            \Session::put('dir', exec('pwd'));
+
         }
         
-        ////////////////////////////////////////////////////
-        // Execute commands
-        ////////////////////////////////////////////////////
-        
-        public function Execute(){
-            //system
-            if(function_exists('system')){
+        public function Execute() {
+
+            if(function_exists('system')) {
+
                 ob_start();
                 system($this->command_exec);
                 $this->output = ob_get_contents();
                 ob_end_clean();
+
             }
-            //passthru
-            else if(function_exists('passthru')){
+
+            else if(function_exists('passthru')) {
+
                 ob_start();
                 passthru($this->command_exec);
                 $this->output = ob_get_contents();
                 ob_end_clean();
+
             }
-            //exec
-            else if(function_exists('exec')){
+
+            else if(function_exists('exec')) {
+
                 exec($this->command_exec , $this->output);
                 $this->output = implode("\n" , $output);
+
             }
-            //shell_exec
-            else if(function_exists('shell_exec')){
+
+            else if(function_exists('shell_exec')) {
+
                 $this->output = shell_exec($this->command_exec);
+
             }
-            // no support
-            else{
+
+            else {
+
                 $this->output = 'Command execution not possible on this system';
+
             }
+
         }        
         
     }
-    
-    //////////////////////////////////////////////////////////////////
-    // Processing
-    //////////////////////////////////////////////////////////////////
-    
-    $command = '';
-    if(!empty($_POST['command'])){ $command = $_POST['command']; }
-    
-    if(strtolower($command=='exit')){
-        
-        //////////////////////////////////////////////////////////////
-        // Exit
-        //////////////////////////////////////////////////////////////
-        
-        $_SESSION['term_auth'] = 'false';
-        $output = '[CLOSED]';
-        
-    }else if($_SESSION['term_auth']!='true'){
-        
-        //////////////////////////////////////////////////////////////
-        // Authentication
-        //////////////////////////////////////////////////////////////
-        
-        if($command==PASSWORD){
-            $_SESSION['term_auth'] = 'true';
-            $output = '[AUTHENTICATED]';
-        }else{
-            $output = 'Enter Password:';
-        }
-        
-    }else{
-    
-        //////////////////////////////////////////////////////////////
-        // Execution
-        //////////////////////////////////////////////////////////////
-        
-        // Split &&
-        $Terminal = new Terminal();
-        $output = '';
-        $command = explode("&&", $command);
-        foreach($command as $c){
-            $Terminal->command = $c;
-            $output .= $Terminal->Process();
-        }
-    
-    }
-
-    
-    echo(htmlentities($output));
-
-
-
-?>

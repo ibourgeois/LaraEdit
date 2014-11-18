@@ -6,4 +6,10 @@ return array(
 
 	'title' => 'LaraEdit',
 
+	'terminal' => array(
+		'root' 		=> app_path() . '/../',
+		'password' 	=> 'secret',
+		'blocked'	=> 'ssh,telnet'
+	)
+
 );

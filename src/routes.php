@@ -12,4 +12,9 @@ Route::group(array('prefix' => Config::get('laraedit::laraedit.uri')), function(
 		'uses' => 'Ibourgeois\Laraedit\LaraeditController@postSave'
 	));
 
+	Route::post('/terminal', array(
+		'as' => 'laraedit_terminal',
+		'uses' => 'Ibourgeois\Laraedit\LaraeditController@postTerminal'
+	));
+
 });

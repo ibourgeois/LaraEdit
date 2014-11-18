@@ -1,16 +1,9 @@
-/*
-*  PHP+JQuery Temrinal Emulator by Fluidbyte <http://www.fluidbyte.net>
-*
-*  This software is released as-is with no warranty and is complete free
-*  for use, modification and redistribution
-*/
-
 $(function(){ terminal.init(); });
 
 var terminal = {
     
     // Controller
-    controller : 'terminal/term.php',
+    controller : 'laraedit/terminal',
     
     // DOM Objects
     command : $('#command input'),

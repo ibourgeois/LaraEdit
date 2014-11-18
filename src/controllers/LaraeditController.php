@@ -57,10 +57,6 @@ class LaraeditController extends \Controller {
 
                 }
 
-                // header ( 'Content-Type: application/json; charset=utf-8' );
-                
-                // echo json_encode ( $rslt );
-
                 return \Response::json( $rslt );
 
             } catch ( Exception $e ) {
@@ -79,6 +75,59 @@ class LaraeditController extends \Controller {
 
     }
 
+    public function postTerminal() {
+
+        if ( \Request::ajax() ) {
+
+            $terminal_password = \Config::get('laraedit::laraedit.terminal.password');
+            
+            $command = '';
+            
+            if(!empty($_POST['command'])) { 
+
+                $command = $_POST['command']; 
+
+            }
+        
+            if(strtolower($command=='exit')) {
+
+                \Session::put('term_auth', false);
+                $output = '[CLOSED]';
+            
+            } else if(\Session::get('term_auth') !== true) {
+            
+                if($command==$terminal_password) {
+
+                    \Session::put('term_auth', true);
+                    $output = '[AUTHENTICATED]';
+
+                } else {
+                    
+                    $output = 'Enter Password:';
+
+                }
+            
+            } else {
+
+                $Terminal = new TerminalController();
+                $output = '';
+                $command = explode("&&", $command);
+            
+                foreach($command as $c) {
+
+                    $Terminal->command = $c;
+                    $output .= $Terminal->Process();
+            
+                }
+        
+            }
+
+            return \Response::json( htmlentities($output) );
+
+        }
+
+    }
+
     public function getIndex() {
 
 		if ( \Request::ajax() ) {
@@ -86,6 +135,12 @@ class LaraeditController extends \Controller {
 		}
 
     	return \View::make( 'laraedit::layout.master' );
+
+    }
+
+    public function postSave() {
+
+        $f = file_put_contents( app_path() . '/../' . $_POST['file'], $_POST['contents']) or die("Can not open file");
 
     }
 
