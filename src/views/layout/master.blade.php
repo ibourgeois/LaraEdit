@@ -27,7 +27,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="sidebar-toggle">
-                        <span class="sr-only">Toggle Sidebar</span>
+                        <span class="sr-only">Toggle Left Sidebar</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="nav-collapse">
                     <div class="nav navbar-nav navbar-right">
                         <button type="button" class="sidebar-buttons-toggle">
-                            <span class="sr-only">Toggle Sidebar</span>
+                            <span class="sr-only">Toggle Right Sidebar</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -120,14 +120,54 @@
             </div>
             <div class="col-fixed sidebar-buttons full">
                 <ul class="nav nav-tabs nav-stacked">
-                    <li><a href="#tab1" title="LaraEdit Settings" data-toggle="tab"><i class="fa fa-cog"></i></a></li>
-                    <li class="active"><a href="#tab2" title="Code Editor" data-toggle="tab"><i class="fa fa-code"></i></a></li>
-                    <li><a href="#tab3" title="Eloquent UI" data-toggle="tab"><i class="fa fa-database"></i></a></li>
-                    <li><a href="#tab4" title="Terminal" data-toggle="tab"><i class="fa fa-terminal"></i></a></li>
-                    <li><a href="#tab5" title="Laravel Configuration Manager" data-toggle="tab"><i class="fa fa-cogs"></i></a></li>
-                    <li><a href="#tab6" title="Laravel Package Manager" data-toggle="tab"><i class="fa fa-truck"></i></a></li>
-                    <li><a href="#tab7" title="About LaraEdit" data-toggle="tab"><i class="fa fa-beer"></i></a></li>
-                    <li><a href="https://github.com/iBourgeois/LaraEdit/issues" title="LaraEdit Support" target="_blank"><i class="fa fa-support"></i></a></li>
+                    <li>
+                        <a href="#tab1" data-toggle="tab">
+                            <span class="sr-only">LaraEdit Settings</span>
+                            <i class="fa fa-cog"></i>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#tab2" data-toggle="tab">
+                            <span class="sr-only">Code Editor</span>
+                            <i class="fa fa-code"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab3" data-toggle="tab">
+                            <span class="sr-only">Eloquent UI</span>
+                            <i class="fa fa-database"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab4" data-toggle="tab">
+                            <span class="sr-only">Terminal</span>
+                            <i class="fa fa-terminal"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab5" data-toggle="tab">
+                            <span class="sr-only">Laravel Configuration Manager</span>
+                            <i class="fa fa-cogs"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab6" data-toggle="tab">
+                            <span class="sr-only">Laravel Package Manager</span>
+                            <i class="fa fa-truck"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab7" data-toggle="tab">
+                            <span class="sr-only">About LaraEdit</span>
+                            <i class="fa fa-beer"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/iBourgeois/LaraEdit/issues" target="_blank">
+                            <span class="sr-only">LaraEdit Support</span>
+                            <i class="fa fa-support"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
