@@ -85,6 +85,9 @@
                     <div class="row full"></div>
                 </div>
                 <div class="tab-pane fade full" id="tab6">
+                    <div class="row full"></div>
+                </div>
+                <div class="tab-pane fade full" id="tab7">
                     <div class="row full">
                         <div class="col-sm-6 col-sm-offset-3">
                             <h2>About LaraEdit</h2>
@@ -117,13 +120,14 @@
             </div>
             <div class="col-fixed sidebar-buttons full">
                 <ul class="nav nav-tabs nav-stacked">
-                    <li><a href="#tab1" data-toggle="tab"><i class="fa fa-cog"></i></a></li>
-                    <li class="active"><a href="#tab2" data-toggle="tab"><i class="fa fa-code"></i></a></li>
-                    <li><a href="#tab3" data-toggle="tab"><i class="fa fa-database"></i></a></li>
-                    <li><a href="#tab4" data-toggle="tab"><i class="fa fa-terminal"></i></a></li>
-                    <li><a href="#tab5" data-toggle="tab"><i class="fa fa-cogs"></i></a></li>
-                    <li><a href="#tab6" data-toggle="tab"><i class="fa fa-beer"></i></a></li>
-                    <li><a href="https://github.com/iBourgeois/LaraEdit/issues" target="_blank"><i class="fa fa-support"></i></a></li>
+                    <li><a href="#tab1" title="LaraEdit Settings" data-toggle="tab"><i class="fa fa-cog"></i></a></li>
+                    <li class="active"><a href="#tab2" title="Code Editor" data-toggle="tab"><i class="fa fa-code"></i></a></li>
+                    <li><a href="#tab3" title="Eloquent UI" data-toggle="tab"><i class="fa fa-database"></i></a></li>
+                    <li><a href="#tab4" title="Terminal" data-toggle="tab"><i class="fa fa-terminal"></i></a></li>
+                    <li><a href="#tab5" title="Laravel Configuration Manager" data-toggle="tab"><i class="fa fa-cogs"></i></a></li>
+                    <li><a href="#tab6" title="Laravel Package Manager" data-toggle="tab"><i class="fa fa-truck"></i></a></li>
+                    <li><a href="#tab7" title="About LaraEdit" data-toggle="tab"><i class="fa fa-beer"></i></a></li>
+                    <li><a href="https://github.com/iBourgeois/LaraEdit/issues" title="LaraEdit Support" target="_blank"><i class="fa fa-support"></i></a></li>
                 </ul>
             </div>
         </div>
