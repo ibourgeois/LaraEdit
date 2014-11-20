@@ -1,5 +1,6 @@
 var jsFile;
 $( document ).ready(function() {
+    ace.require("ace/ext/chromevox");
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/artisanedit");
     document.getElementById('editor').style.fontSize='14pt';

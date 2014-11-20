@@ -55,12 +55,14 @@
                     <div class="row full">
                         <div class="col-md-2 sidebar full">
                             <div class="input-group input-group-sm">
+                                <label for="jstree_q" class="sr-only">File Search</label>
                                 <input type="text" class="form-control" id="jstree_q">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
                             </div>
                             <div id="tree"></div>
                         </div>
                         <div class="col-md-10 content full">
+                            <label for="editor" class="sr-only">Code Editor</label>
                             <pre id="editor"></pre>
                         </div>
                     </div>             
@@ -176,6 +178,7 @@
         <script src="{{asset('packages/ibourgeois/laraedit/js/bootstrap/bootstrap.min.js')}}"></script>
         <script src="{{asset('packages/ibourgeois/laraedit/js/jquery-ui/jquery-ui.min.js')}}"></script> 
         <script src="{{asset('packages/ibourgeois/laraedit/js/ace/ace.js')}}"></script>
+        <script src="{{asset('packages/ibourgeois/laraedit/js/ace/ext-chromevox.js')}}"></script>
         <script src="{{asset('packages/ibourgeois/laraedit/js/js-tree/jstree.min.js')}}"></script>
         <script src="{{asset('packages/ibourgeois/laraedit/js/terminal/system.js')}}"></script>
         <script src="{{asset('packages/ibourgeois/laraedit/js/laraedit/laraedit.js')}}"></script>
