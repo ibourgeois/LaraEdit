@@ -13,8 +13,8 @@
         "issues": "https://github.com/iBourgeois/LaraEdit/issues"
     },
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "php": "^8.0",
+        "illuminate/support": "9.21.3"
     },
     "autoload": {
         "classmap": [
