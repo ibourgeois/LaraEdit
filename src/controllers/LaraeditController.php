@@ -108,16 +108,14 @@ class LaraeditController extends \Controller {
                 }
             
             } else {
-
-                $Terminal = new TerminalController();
+                
+                $Terminal = shell_exec($command);
                 $output = '';
                 $command = explode("&&", $command);
             
                 foreach($command as $c) {
-
                     $Terminal->command = $c;
                     $output .= $Terminal->Process();
-            
                 }
         
             }
